@@ -1,6 +1,9 @@
 # Computação Quântica
 Neste tutorial, você será introduzido aos conceitos fundamentais da programação para computação quântica, proporcionando uma base sólida para explorar este campo emergente. Abordaremos os princípios essenciais, como qubits, operadores quânticos, medições, e algoritmos quânticos, além de explorar as principais ferramentas, plataformas e computadores quânticos disponíveis atualmente. Utilizando a plataforma Qiskit da IBM, você acompanhará exemplos práticos que ilustram os primeiros passos nesse universo desafiador, permitindo que você compreenda como aplicar esses conceitos em cenários reais de computação quântica. Este tutorial é ideal para quem deseja dar os primeiros passos na programação quântica e começar a desvendar as possibilidades dessa tecnologia revolucionária.
 
+## Link Para o Tutorial:
+[[#SemanaCap 9] Curso - Computação Quântica: Primeiros Passos para a Programação](https://www.youtube.com/watch?v=_bLVjikp9Rk&t=6431s)
+
 ## Ferramentas Utilizadas:
 <div>
 <img src="https://img.shields.io/badge/Qiskit-6929C4.svg?style=for-the-badge&logo=Qiskit&logoColor=white" />
@@ -47,7 +50,7 @@ sim = Aer.get_backend('aer_simulator')
 result = sim.run(qc).result()
 counts = result.get_counts()
 display(plot_histogram(counts))
-``
+```
 
 ```python
 from qiskit import QuantumCircuit, Aer, transpile, IBMQ
@@ -92,4 +95,38 @@ results = job.result()
 device_counts = results.get_counts()
 # mostra os resultados
 plot_histogram(device_counts)
-``
+```
+
+```python
+from qiskit import QuantumCircuit, Aer
+from qiskit.visualization import plot_histogram
+from qiskit.quantum_info import Statevector
+from math import pi
+# qubit definitions
+# q[0] --> A
+# q[1] --> B
+# q[2] --> CarryIn_SumOut
+# q[3] --> CarryOut
+# initialize inputs to some values
+.init
+#initialize inputs A=1, B=0 and carry_in=1
+{x q[0] | x q[2]}
+# perform addition
+.add
+toffoli q[0],q[1],q[3]
+cnot q[0],q[1]
+toffoli q[1],q[2],q[3]
+cnot q[1],q[2]
+cnot q[0],q[1]
+# desenha o circuito
+display(qc.draw(initial_state=True))
+# plota na esfera de Bloch
+state = Statevector.from_instruction(qc)
+display(plot_bloch_multivector(state))
+# adiciona medição
+qc.measure_all()
+# executa no simulador
+sim = Aer.get_backend('aer_simulator')
+result = sim.run(qc).result()
+counts = result.get_counts()
+display(plot_histogram(counts))

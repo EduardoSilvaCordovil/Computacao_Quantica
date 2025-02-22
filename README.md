@@ -1,7 +1,9 @@
 # Computação Quântica
-Neste tutorial, você será introduzido aos conceitos fundamentais da programação para computação quântica, proporcionando uma base sólida para explorar este campo emergente. Abordaremos os princípios essenciais, como qubits, operadores quânticos, medições, e algoritmos quânticos, além de explorar as principais ferramentas, plataformas e computadores quânticos disponíveis atualmente. Utilizando a plataforma Qiskit da IBM, você acompanhará exemplos práticos que ilustram os primeiros passos nesse universo desafiador, permitindo que você compreenda como aplicar esses conceitos em cenários reais de computação quântica. Este tutorial é ideal para quem deseja dar os primeiros passos na programação quântica e começar a desvendar as possibilidades dessa tecnologia revolucionária.
+"Neste tutorial, elaborado por [Regina Melo Silveira](https://www.linkedin.com/in/regina-melo-silveira-b39361/), você será introduzido aos conceitos fundamentais da programação para computação quântica, proporcionando uma base sólida para explorar este campo emergente. Abordaremos os princípios essenciais, como qubits, operadores quânticos, medições, e algoritmos quânticos, além de explorar as principais ferramentas, plataformas e computadores quânticos disponíveis atualmente. Utilizando a plataforma Qiskit da IBM, você acompanhará exemplos práticos que ilustram os primeiros passos nesse universo desafiador, permitindo que você compreenda como aplicar esses conceitos em cenários reais de computação quântica. Este tutorial é ideal para quem deseja dar os primeiros passos na programação quântica e começar a desvendar as possibilidades dessa tecnologia revolucionária."
 
-## Link Para o Tutorial em Vídeo e Material Usado:
+- Fonte: [NIC.br](https://www.linkedin.com/company/nic-br/posts/?feedView=all)
+
+## Link Para o Tutorial em Vídeo e Material Utilizado:
 [Vídeo no YouTube: [#SemanaCap 9] Curso - Computação Quântica: Primeiros Passos para a Programação](https://www.youtube.com/watch?v=_bLVjikp9Rk&t=6431s) <br>
 
 [PDF: Computação Quântica: Primeiros Passos para a Programação](https://semanacap.bcp.nic.br/files/apresentacao/arquivo/1980/NicBr_Quantum_introdu%C3%A7%C3%A3o_2024_v2.pdf)
